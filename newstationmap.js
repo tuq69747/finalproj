@@ -45,7 +45,7 @@ function addGeoJSONToMap(data, color) {
 }
 
 // Load and display original stations (Indego Blue)
-fetch("data/stations.geojson")
+fetch("finalproj/data/stations.geojson")
     .then(response => response.json())
     .then(data => addGeoJSONToMap(data, "#002169"))
     .catch(error => {
@@ -54,7 +54,7 @@ fetch("data/stations.geojson")
     });
 
 // Load and display new stations (Indego Green)
-fetch("data/newstations.geojson")
+fetch("finalproj/data/newstations.geojson")
     .then(response => response.json())
     .then(data => addGeoJSONToMap(data, "#93d500"))  
     .catch(error => {
